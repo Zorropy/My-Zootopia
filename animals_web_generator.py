@@ -17,11 +17,12 @@ def serialize_animal(animal):
 
     output = ''
     output += '<li class ="cards__item">'
-    output += f"Name: {name}<br/>"
-    output += f"Diet: {diet}<br/>"
-    output += f"Location: {location[0]}<br/>"
-    output += f"Type: {animal_type}<br/>"
-
+    output += f'<div class="card__title">{name}</div>'
+    output += '<p class="card__text">'
+    output += f"<strong>Diet:</strong> {diet}<br/>"
+    output += f"<strong>Location:</strong> {location[0]}<br/>"
+    output += f"<strong>Type:</strong> {animal_type}<br/>"
+    output += '</p>'
     output += '</li>'
     return output
 
@@ -46,4 +47,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
